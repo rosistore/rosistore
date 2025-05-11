@@ -82,32 +82,13 @@ fun_bar() {
 res1() {
 # Clear and recreate /usr/local/sbin
 wget https://raw.githubusercontent.com/rosistore/rosistore/main/Cdy/menu.zip -O menu.zip >/dev/null 2>&1
-wget https://raw.githubusercontent.com/rosistore/rosistore/main/enc
 7z x -pHeyHeyMauDecryptYaAwokawokARISTORE menu.zip
 chmod +x menu/*
-chmod +x enc
-./enc menu/*
-rm -rf menu/*~
-rm -r /usr/local/sbin >/dev/null 2>&1
-mv menu/* /usr/local/sbin/
-chmod +x /usr/local/sbin/*
-rm -rf enc menu menu.zip 
-
-echo "$versi_terbaru" > /usr/bin/menu_version  # Update versi lokal
-CHATID=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 3)
-KEY=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 2)
-TIME="10"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="
-<code>◇━━━━━━━━━━━━━━◇</code>
-<b>  ⚠️UPDATE NOTIF⚠️</b>
-<code>◇━━━━━━━━━━━━━━◇</code>
-<code>Auto Update Script Done</code>
-<code>Versi : $versi_terbaru</code>
-<code>◇━━━━━━━━━━━━━━◇</code>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://wa.me/FRosi46"},{"text":"Contact","url":"https://wa.me/081931472448"}]]}'
-
-curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
+rm -r /usr/local/sbin
+mkdir /usr/local/sbin
+mv menu/* /usr/local/sbin
+chmod +x /usr/local/sbin*
+rm -rf menu menu.zip 
 }
 
 # Cek dan jalankan update jika ada
