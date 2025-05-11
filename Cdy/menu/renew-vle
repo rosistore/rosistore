@@ -32,7 +32,7 @@ function Sc_Credit(){
 sleep 1
 baris_panjang
 echo -e       "\033[0;35m          Terimakasih sudah menggunakan-       \033[0m"
-echo -e       "\033[0;35m         Script Credit By ARISCTUNNEL V4       \033[0m"
+echo -e       "\033[0;35m         Script Credit By Rosi Center Store       \033[0m"
 baris_panjang
 exit 1
 }

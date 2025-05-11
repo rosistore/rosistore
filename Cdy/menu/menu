@@ -12,10 +12,10 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 ######################################
 # // USERNAME IZIN IPP
 rm -f /usr/bin/user
-username=$(curl -sS https://raw.githubusercontent.com/arivpnstores/izin/main/ip | grep $MYIP | awk '{print $2}')
+username=$(curl -sS https://raw.githubusercontent.com/rosistore/izin/main/ip | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
 rm -f /usr/bin/e
-valid=$(curl -sS https://raw.githubusercontent.com/arivpnstores/izin/main/ip | grep $MYIP | awk '{print $3}')
+valid=$(curl -sS https://raw.githubusercontent.com/rosistore/izin/main/ip | grep $MYIP | awk '{print $3}')
 echo "$valid" > /usr/bin/e
 
 clear
@@ -116,7 +116,7 @@ let ssa=$ssx/2
 function xdxl_Banner() {
 clear
 echo -e "\033[96;1m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\033[96;1m│ \e[41;1m                ARISCTUNNEL V4                 \e[0m \033[96;1m│\e[0m"
+echo -e "\033[96;1m│ \e[41;1m                Rosi Center Store                 \e[0m \033[96;1m│\e[0m"
 echo -e "\033[96;1m└─────────────────────────────────────────────────┘\e[0m"
 }
 
@@ -177,7 +177,7 @@ case $hallo in
 5) clear ; m-noobz ;; # menu noobz
 6) clear ; m-ssr ;; # menu sadowsocks
 7) clear ; m-bot ;; # menu bot telegram
-8) clear ; rm -rf update.sh && wget -q https://raw.githubusercontent.com/arivpnstores/v4/main/update.sh && bash update.sh ;; #Update script
+8) clear ; rm -rf update.sh && wget -q https://raw.githubusercontent.com/rosistore/rosistore/main/update.sh && bash update.sh ;; #Update script
 9) clear ; m-bkp ;; # menu backup
 10) clear ; m-ftr ;; # menu managers
 x) exit ;;

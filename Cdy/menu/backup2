@@ -10,8 +10,8 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
-export CHATID="1962241851"
-export KEY="6226300152:AAE8Qv37sXKaIDn80q7cVkSbvYBWeCUlE9E"
+export CHATID="6646907804"
+export KEY="7358249397:AAE8NW4OL1T-H13kdYyEzTT0z6Nyx-6DubU"
 export TIME="10"
 export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear

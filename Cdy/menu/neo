@@ -9,6 +9,6 @@ clear
 neofetch
 echo -e "  \e[92;1m Information System \e[0m"
 echo -e "  \e[97;1m---------------------------------------${NC}"
-echo -e "  \e[97;1m            ARISCTUNNEL V4             ${NC}"
+echo -e "  \e[97;1m            Rosi Center Store             ${NC}"
 echo -e "  \e[97;1m---------------------------------------${NC}"
 echo -e ""

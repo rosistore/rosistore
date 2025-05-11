@@ -22,8 +22,8 @@ green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 TIMES="10"
-CHATID="1962241851"
-KEY="6866097221:AAFdDsbTF-R7_d07ewI3z0BQHYrd7yQNhhA"
+CHATID="6646907804"
+KEY="7358249397:AAE8NW4OL1T-H13kdYyEzTT0z6Nyx-6DubU"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -31,7 +31,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "\033[96;1m          WELCOME TO SRICPT BY ARISCTUNNEL V4            \033[0m"
+echo -e "\033[96;1m          WELCOME TO SRICPT BY Rosi Center Store            \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 3
@@ -75,7 +75,7 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
-izinsc="https://raw.githubusercontent.com/arivpnstores/izin/main/ip"
+izinsc="https://raw.githubusercontent.com/rosistore/izin/main/ip"
 rm -f /usr/bin/user
 username=$(curl ${izinsc} | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
@@ -105,7 +105,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/arivpnstores/v4/main/"
+REPO="https://raw.githubusercontent.com/rosistore/rosistore/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -233,37 +233,9 @@ clear
 function pasang_domain() {
 echo -e ""
 clear
-echo -e "    ----------------------------------"
-echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
-echo -e "    ----------------------------------"
-echo -e "     \e[1;32m1)\e[0m Your Domain"
-echo -e "     \e[1;32m2)\e[0m Random Domain "
-echo -e "   ------------------------------------"
-read -p "   Please select numbers 1-2 or Any Button(Random) : " host
-echo ""
-if [[ $host == "1" ]]; then
-clear
-echo ""
-echo ""
-echo -e "   \e[1;36m_______________________________$NC"
-echo -e "   \e[1;32m      CHANGES DOMAIN $NC"
-echo -e "   \e[1;36m_______________________________$NC"
-echo -e ""
-read -p "   INPUT YOUR DOMAIN :   " host1
-echo "IP=${host1}" >> /var/lib/kyt/ipvps.conf
-echo $host1 > /etc/xray/domain
-echo $host1 > /root/domain
-if [[ -z "$nama" ]]; then
-  echo "ARISVTUNNEL V4" > /etc/xray/username
-else
-  echo "$nama" > /etc/xray/username
-fi
-echo ""
-elif [[ $host == "2" ]]; then
 wget ${REPO}Fls/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
-else
 print_install "Random Subdomain/Domain is Used"
 clear
 fi
@@ -285,7 +257,7 @@ TEXT="
 <code>Exp Sc : </code><code>$EXPSC</code>
 <code>────────────────────</code>
 <i>Automatic Notification from Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://wa.me/ARI_VPN_STORE"},{"text":"Contack","url":"https://wa.me/6281327393959"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://wa.me/FRosi46"},{"text":"Contack","url":"https://wa.me/081931472448"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear

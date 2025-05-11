@@ -29,10 +29,10 @@ clear
 ######################################
 # // USERNAME IZIN IPP
 rm -f /usr/bin/user
-username=$(curl -sS https://raw.githubusercontent.com/arivpnstores/izin/main/ip | grep $MYIP | awk '{print $2}')
+username=$(curl -sS https://raw.githubusercontent.com/rosistore/izin/main/ip | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
 rm -f /usr/bin/e
-valid=$(curl -sS https://raw.githubusercontent.com/arivpnstores/izin/main/ip | grep $MYIP | awk '{print $3}')
+valid=$(curl -sS https://raw.githubusercontent.com/rosistore/izin/main/ip | grep $MYIP | awk '{print $3}')
 echo "$valid" > /usr/bin/e
 
 clear
@@ -166,7 +166,7 @@ fi
 function rif_Banner() {
 clear
 echo -e "\e[1;96m┌─────────────────────────────────────────────────┐\e[0m"
-echo -e "\e[1;96m│ \e[41;1m                ARISCTUNNEL V4                 \e[0m \e[1;96m│\e[0m"
+echo -e "\e[1;96m│ \e[41;1m                Rosi Center Store                 \e[0m \e[1;96m│\e[0m"
 echo -e "\e[1;96m└─────────────────────────────────────────────────┘\e[0m"
 }
 

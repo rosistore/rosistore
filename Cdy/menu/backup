@@ -14,12 +14,12 @@ domain=$(cat /etc/xray/domain)
 MYIP=$(curl -sS ipv4.icanhazip.com)
 IP=$(wget -qO- icanhazip.com)
 dateToday=$(date +"%Y-%m-%d")
-Name=$(curl https://raw.githubusercontent.com/arivpnstores/izin/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl https://raw.githubusercontent.com/rosistore/izin/main/ip | grep $MYIP | awk '{print $2}')
 clear
 botBackup() {
     switch=on
-    bottoken=6226300152:AAE8Qv37sXKaIDn80q7cVkSbvYBWeCUlE9E
-    adminid=1962241851
+    bottoken=7358249397:AAE8NW4OL1T-H13kdYyEzTT0z6Nyx-6DubU
+    adminid=6646907804
     echo -e "[ ${green}INFO${NC} ] Create password "
 	if [[ -z $InputPass ]]; then
 	InputPass="Ari123Ok"

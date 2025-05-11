@@ -19,7 +19,7 @@ clear
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/arivpnstores/izin/main/ip"
+data_ip="https://raw.githubusercontent.com/rosistore/izin/main/ip"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -33,8 +33,8 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS\033[0m $ipsaya \033[0;33mHas been Banned\033[0m"
     echo -e "     \033[0;33mBuy access permissions for scripts\033[0m"
     echo -e "             \033[0;33mContact Admin :\033[0m"
-    echo -e "      \033[2;32mWhatsApp\033[0m wa.me/6281327393959"
-	echo -e "      \033[2;32mTelegram\033[0m wa.me/ARI_VPN_STORE"
+    echo -e "      \033[2;32mWhatsApp\033[0m wa.me/081931472448"
+	echo -e "      \033[2;32mTelegram\033[0m wa.me/FRosi46"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
@@ -58,7 +58,7 @@ echo -e "\033[5;36m ————————————————————
 function xdxl_Banner() {
 clear
 baris_panjang
-echo -e       "\033[0;35m                  ARISCTUNNEL V4                \033[0m"
+echo -e       "\033[0;35m                  Rosi Center Store                \033[0m"
 baris_panjang
 }
 function MODE_Banner() {
@@ -70,7 +70,7 @@ function Sc_Credit(){
 sleep 1
 baris_panjang
 echo -e       "\033[0;35m          Terimakasih sudah menggunakan-       \033[0m"
-echo -e       "\033[0;35m         Script Credit By ARISCTUNNEL V4       \033[0m"
+echo -e       "\033[0;35m         Script Credit By Rosi Center Store       \033[0m"
 baris_panjang
 exit 1
 }
