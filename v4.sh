@@ -236,7 +236,6 @@ rm -f /root/cf.sh
 clear
 print_install "Random Subdomain/Domain is Used"
 clear
-fi
 }
 clear
 restart_system() {
