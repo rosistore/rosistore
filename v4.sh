@@ -28,8 +28,6 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
 clear
-clear && clear && clear
-clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "\033[96;1m          WELCOME TO SRICPT BY Rosi Center Store            \033[0m"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
