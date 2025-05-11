@@ -252,7 +252,7 @@ echo "IP=${host1}" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
 if [[ -z "$nama" ]]; then
-  echo "ARISVTUNNEL V4" > /etc/xray/username
+  echo "Rosi Center Store" > /etc/xray/username
 else
   echo "$nama" > /etc/xray/username
 fi
