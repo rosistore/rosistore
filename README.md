@@ -11,6 +11,8 @@ https://github.com/rosistore/izin/edit/main/ip
 ### PERINTAH ADD DOMAIN 
 <pre><code>wget -q https://raw.githubusercontent.com/rosistore/rosistore/main/Fls/cf.sh && chmod +x cf.sh && ./cf.sh</code></pre>
 
+### PERINTAH ADD DOMAIN SELOWDNS 
+<pre><code>wget -q https://raw.githubusercontent.com/rosistore/rosistore/main/Cfg/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh</code></pre>
 ### TESTED ON OS 
 - UBUNTU 20.04.05
 - DEBIAN 10
