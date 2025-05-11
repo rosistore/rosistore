@@ -1,6 +1,4 @@
 #!/bin/bash
-wget -q https://raw.githubusercontent.com/rosistore/rosistore/main/Fls/http -O /usr/bin/http
-cekhttp=$(cat /usr/bin/http)
 # Menghapus file .profile lama
   rm -rf /root/.profile
 
@@ -50,38 +48,9 @@ cekhttp=$(cat /usr/bin/http)
     fi
 
 
-# Fungsi untuk mengecek versi terbaru
-cek_versi_baru() {
-    # Mendapatkan versi terbaru dari URL update-cek
-    versi_terbaru=$(curl -s https://$cekhttp:81/update-cek)
-
-     # Check if /usr/bin/menu_version exists, if not create with version 1
-  if [ ! -f /usr/bin/menu_version ]; then
-    echo "1" > /usr/bin/menu_version
-    echo "Version not found. Creating with version 1."
-  fi
-    # Versi saat ini (bisa disesuaikan dengan cara memperoleh versi lokal)
-    versi_saat_ini=$(cat /usr/bin/menu_version)
-
-    # Membandingkan versi terbaru dengan versi saat ini
-    if [[ "$versi_terbaru" != "$versi_saat_ini" ]]; then
-        echo "Versi baru tersedia: $versi_terbaru"
-        return 0  # Ada versi baru
-    else
-        echo "Versi sudah up-to-date: $versi_saat_ini"
-        return 1  # Tidak ada versi baru
-    fi
-}
-
 # Fungsi untuk menjalankan update jika ada versi terbaru
 jalankan_update() {
-    if cek_versi_baru; then
-        echo "Menjalankan update ke versi terbaru..."
-        sleep 3
-        fun_bar res1  # Menjalankan fungsi update jika versi baru terdeteksi
-    else
-        echo "Tidak ada update yang diperlukan."
-    fi
+fun_bar res1  # Menjalankan fungsi update jika versi baru terdeteksi
 }
 
 # Fungsi progress bar
