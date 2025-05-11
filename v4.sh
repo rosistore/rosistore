@@ -231,11 +231,40 @@ clear
 function pasang_domain() {
 echo -e ""
 clear
+echo -e "    ----------------------------------"
+echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
+echo -e "    ----------------------------------"
+echo -e "     \e[1;32m1)\e[0m Your Domain"
+echo -e "     \e[1;32m2)\e[0m Random Domain "
+echo -e "   ------------------------------------"
+read -p "   Please select numbers 1-2 or Any Button(Random) : " host
+echo ""
+if [[ $host == "1" ]]; then
+clear
+echo ""
+echo ""
+echo -e "   \e[1;36m_______________________________$NC"
+echo -e "   \e[1;32m      CHANGES DOMAIN $NC"
+echo -e "   \e[1;36m_______________________________$NC"
+echo -e ""
+read -p "   INPUT YOUR DOMAIN :   " host1
+echo "IP=${host1}" >> /var/lib/kyt/ipvps.conf
+echo $host1 > /etc/xray/domain
+echo $host1 > /root/domain
+if [[ -z "$nama" ]]; then
+  echo "ARISVTUNNEL V4" > /etc/xray/username
+else
+  echo "$nama" > /etc/xray/username
+fi
+echo ""
+elif [[ $host == "2" ]]; then
 wget ${REPO}Fls/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
+else
 print_install "Random Subdomain/Domain is Used"
 clear
+fi
 }
 clear
 restart_system() {
