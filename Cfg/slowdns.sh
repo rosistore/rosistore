@@ -20,7 +20,7 @@ ns_domain_cloudflare() {
 	if [ -z $SUB ]; then
     exit
     else
-	SUB_DOMAIN=${SUB}."xdg-boost.my.id"
+	SUB_DOMAIN=${SUB}."rosicenter5.my.id"
 	NS_DOMAIN=dns.${SUB_DOMAIN}
 	CF_ID=panwaslublegapilkada@gmail.com
         CF_KEY=c1feca5207e3db081a8d69eae9a5015ec5d4f
