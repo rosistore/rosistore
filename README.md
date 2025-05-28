@@ -1,5 +1,5 @@
 ### IZIN SCRIPT 
-https://github.com/rosistore/izin/edit/main/ip
+ijin Script hubungin admin : 081931472448
 
 ### INSTALL SCRIPT 
 <pre><code>apt-get update -y && apt install curl wget && wget -q https://raw.githubusercontent.com/rosistore/rosistore/main/v4.sh && chmod +x v4.sh && ./v4.sh
